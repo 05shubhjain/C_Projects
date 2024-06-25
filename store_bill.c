@@ -10,7 +10,7 @@ struct list{
 
 // create function to display bill
 
-void display(struct list l[] , int size , char cName[] , char cAddress[]){
+void display(struct list l[] , int totalItems , char cName[] , char cAddress[]){
     int total = 0;
     printf("\n\n\n\n");
     printf("\t Shubh Store \n");
@@ -18,7 +18,7 @@ void display(struct list l[] , int size , char cName[] , char cAddress[]){
     printf("\n");
     printf("Name : %s \t Address : %s \n" , cName , cAddress);
     printf("\n");
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < totalItems; i++)
     {
         printf("Id : %d\t", l[i].id);
         printf("Name : %s\t", l[i].itemName);
